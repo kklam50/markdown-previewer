@@ -3,10 +3,8 @@ function Preview(props) {
 
     return (
         <div id="preview-container">
-            <h1>this is the preview section</h1>
-            <div id="preview" dangerouslySetInnerHTML={{ __html: textInput }}>
-
-            </div>
+            <h1>Preview</h1>
+            <div id="preview" dangerouslySetInnerHTML={{ __html: textInput }}/>
         </div>
     )
 }

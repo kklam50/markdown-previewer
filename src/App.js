@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { marked } from 'marked';
 
 function App() {
-  const startingMarkdown = "### Hello! \nWelcome to the markdown previewer! \n\n**bolded text**";
+  const startingMarkdown = "### Hello! \nWelcome to the markdown previewer! \n\n**bolded text** \n\n*This text will be italic*";
   const [textInput, setTextInput] = useState(startingMarkdown);
 
   return (

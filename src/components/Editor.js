@@ -9,12 +9,10 @@ function Editor(props) {
 
     return (
         <div id="editor-container">
-            <h1>this is the editor section</h1>
+            <h1>Editor</h1>
             <textarea id="editor" 
                       onChange={updatePreview} 
                       value={textInput}
-                      rows="6"
-                      cols="50"
             />
         </div>
     );
