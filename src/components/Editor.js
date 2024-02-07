@@ -8,12 +8,14 @@ function Editor(props) {
     }
 
     return (
-        <div id="editor-container">
-            <h1>Editor</h1>
-            <textarea id="editor" 
-                      onChange={updatePreview} 
-                      value={textInput}
-            />
+        <div id="test">
+            <div id="editor-container">
+                <h1>Editor</h1>
+                <textarea id="editor" 
+                        onChange={updatePreview} 
+                        value={textInput}
+                />
+            </div>
         </div>
     );
 }

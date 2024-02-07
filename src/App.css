@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(255, 255, 255)
+  color: white;
 }
 
 h1 {
@@ -12,11 +12,47 @@ h1 {
 }
 
 #editor-container, #preview-container {
-  background-color: rgb(95, 95, 95);
+  background-color: rgb(51, 51, 51);
   width: 50vw;
-  border: 1px solid;
+  border: 1px solid rgb(0, 0, 0);
   margin: 2rem;
   padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+#editor-container:after, #preview-container:after{  
+  content: "";
+  height: 100px;
+  width: 1px;  
+  position: absolute;  
+  left: -1px;
+  top: 85%;
+  transition: top, opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  background: linear-gradient(
+    transparent,
+    rgb(210, 179, 255),
+    transparent
+  );
+  opacity: 0;
+}
+
+#editor-container:after, #preview-container:after{  
+  top: 85%;
+  opacity: 0;
+}
+
+#editor-container:hover:after, #preview-container:hover:after{
+  top: 15%;
+  opacity: 1;
+}
+
+#editor, #preview {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(226, 226, 226);
 }
 
 #editor {
@@ -32,7 +68,6 @@ h1 {
 }
 
 #preview {
-  background-color: white;
   color: black;
   width: 45vw;
   height: 40vh;
